@@ -1,0 +1,160 @@
+# Bulgarian translation of dragoman-plasmoid.
+# SPDX-FileCopyrightText: 2026 Blagovest Petrov <blagovest@petrovs.info>
+# SPDX-FileCopyrightText: 2026 Vute Tech Ltd. <https://vute.tech>
+# SPDX-License-Identifier: GPL-3.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: dragoman-plasmoid\n"
+"Report-Msgid-Bugs-To: https://github.com/VuteTech/dragoman-plasmoid/issues\n"
+"POT-Creation-Date: 2026-10-01 02:31+0300\n"
+"PO-Revision-Date: 2026-10-01 12:00+0300\n"
+"Last-Translator: Blagovest Petrov <blagovest@petrovs.info>\n"
+"Language-Team: Bulgarian\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "@info %1 is a language name"
+msgid "The text is in %1, so the languages were swapped."
+msgstr "Текстът е на %1, затова езиците бяха разменени."
+
+#, kde-format
+msgctxt "@info"
+msgid "The translation service returned %1 lines for %2."
+msgstr "Услугата за превод върна %1 реда вместо %2."
+
+msgctxt "@label:listbox"
+msgid "Translate from:"
+msgstr "Превод от:"
+
+msgctxt "@label:listbox"
+msgid "Source language"
+msgstr "Изходен език"
+
+msgctxt "@label:listbox"
+msgid "Translate into:"
+msgstr "Превод на:"
+
+msgctxt "@label:listbox"
+msgid "Target language"
+msgstr "Целеви език"
+
+msgctxt "@title:group"
+msgid "Translation:"
+msgstr "Превод:"
+
+msgctxt "@option:check"
+msgid "Translate while typing"
+msgstr "Превод докато пишете"
+
+msgctxt "@option:check"
+msgid "Swap the languages when the text is in the target language"
+msgstr "Размяна на езиците, когато текстът е на целевия език"
+
+msgctxt "@title"
+msgid "General"
+msgstr "Общи"
+
+msgctxt "@action:button"
+msgid "Swap Languages"
+msgstr "Размяна на езиците"
+
+msgctxt "@info"
+msgid "The Dragomand translation service is not available. Check that dragomand is installed."
+msgstr "Услугата за превод Dragomand не е достъпна. Проверете дали dragomand е инсталиран."
+
+msgctxt "@info %1 is an error message"
+msgid "Cannot reach the Dragomand translation service: %1"
+msgstr "Няма връзка с услугата за превод Dragomand: %1"
+
+msgctxt "@action:button"
+msgid "Retry"
+msgstr "Нов опит"
+
+msgctxt "@info %1 and %2 are language names"
+msgid "Translating from %1 into %2 needs language models that are not installed yet."
+msgstr "За превод от %1 на %2 са нужни езикови модели, които още не са инсталирани."
+
+msgctxt "@action:button"
+msgid "Install"
+msgstr "Инсталиране"
+
+msgctxt "@info:tooltip"
+msgid "Download the language models and translate"
+msgstr "Изтегляне на езиковите модели и превод"
+
+msgctxt "@action:button"
+msgid "Swap Back"
+msgstr "Връщане"
+
+msgctxt "@info:tooltip"
+msgid "Translate in the direction chosen before"
+msgstr "Превод в посоката, избрана преди това"
+
+msgctxt "@info:status"
+msgid "Installing language models"
+msgstr "Инсталиране на езикови модели"
+
+#, javascript-format
+msgctxt "@info:status %1 is a percentage"
+msgid "Installing language models: %1%"
+msgstr "Инсталиране на езикови модели: %1%"
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Отказ"
+
+msgctxt "@info:tooltip"
+msgid "Stop the download"
+msgstr "Спиране на изтеглянето"
+
+msgctxt "@info:placeholder"
+msgid "Type or paste text to translate"
+msgstr "Въведете или поставете текст за превод"
+
+msgctxt "@label:textbox"
+msgid "Text to translate"
+msgstr "Текст за превод"
+
+msgctxt "@info:placeholder"
+msgid "Translation"
+msgstr "Превод"
+
+msgctxt "@label:textbox"
+msgid "Translation"
+msgstr "Превод"
+
+msgctxt "@info %1 is a language name"
+msgid "Translated through %1: no direct model exists for this pair."
+msgstr "Преведено чрез %1: няма пряк модел за тази двойка езици."
+
+msgctxt "@action:button"
+msgid "Translate"
+msgstr "Превод"
+
+msgctxt "@info:tooltip"
+msgid "Translate now (Ctrl+Return)"
+msgstr "Превод сега (Ctrl+Return)"
+
+msgctxt "@action:button"
+msgid "Open in Krakoman"
+msgstr "Отваряне в Krakoman"
+
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Копиране"
+
+msgctxt "@action:button"
+msgid "Copy Translation"
+msgstr "Копиране на превода"
+
+msgctxt "@info:tooltip"
+msgid "Copy the translation to the clipboard"
+msgstr "Копиране на превода в буфера"
+
+msgctxt "@info:tooltip"
+msgid "Translate text without an internet connection"
+msgstr "Превод на текст без връзка с интернет"

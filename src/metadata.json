@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "blagovest@petrovs.info",
+                "Name": "Blagovest Petrov",
+                "Name[bg]": "Благовест Петров"
+            }
+        ],
+        "BugReportUrl": "https://github.com/VuteTech/dragoman-plasmoid/issues",
+        "Category": "Language",
+        "Description": "Translate text offline with the Dragomand translation service",
+        "Description[bg]": "Превод на текст без интернет чрез услугата за превод Dragomand",
+        "EnabledByDefault": true,
+        "Icon": "dev.l10n_bg.dragomand",
+        "License": "GPL-3.0-or-later",
+        "Name": "Offline Translator",
+        "Name[bg]": "Офлайн преводач",
+        "Website": "https://dragomand.l10n-bg.dev"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

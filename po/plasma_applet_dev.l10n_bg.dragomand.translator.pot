@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dragoman-plasmoid package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dragoman-plasmoid\n"
+"Report-Msgid-Bugs-To: https://github.com/VuteTech/dragoman-plasmoid/issues\n"
+"POT-Creation-Date: 2026-10-01 02:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, kde-format
+msgctxt "@info %1 is a language name"
+msgid "The text is in %1, so the languages were swapped."
+msgstr ""
+
+#, kde-format
+msgctxt "@info"
+msgid "The translation service returned %1 lines for %2."
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Translate from:"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Source language"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Translate into:"
+msgstr ""
+
+msgctxt "@label:listbox"
+msgid "Target language"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Translation:"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Translate while typing"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Swap the languages when the text is in the target language"
+msgstr ""
+
+msgctxt "@title"
+msgid "General"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Swap Languages"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"The Dragomand translation service is not available. Check that dragomand is "
+"installed."
+msgstr ""
+
+msgctxt "@info %1 is an error message"
+msgid "Cannot reach the Dragomand translation service: %1"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Retry"
+msgstr ""
+
+msgctxt "@info %1 and %2 are language names"
+msgid ""
+"Translating from %1 into %2 needs language models that are not installed yet."
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Install"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Download the language models and translate"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Swap Back"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Translate in the direction chosen before"
+msgstr ""
+
+msgctxt "@info:status"
+msgid "Installing language models"
+msgstr ""
+
+#, javascript-format
+msgctxt "@info:status %1 is a percentage"
+msgid "Installing language models: %1%"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Stop the download"
+msgstr ""
+
+msgctxt "@info:placeholder"
+msgid "Type or paste text to translate"
+msgstr ""
+
+msgctxt "@label:textbox"
+msgid "Text to translate"
+msgstr ""
+
+msgctxt "@info:placeholder"
+msgid "Translation"
+msgstr ""
+
+msgctxt "@label:textbox"
+msgid "Translation"
+msgstr ""
+
+msgctxt "@info %1 is a language name"
+msgid "Translated through %1: no direct model exists for this pair."
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Translate"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Translate now (Ctrl+Return)"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Open in Krakoman"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Copy"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Copy Translation"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Copy the translation to the clipboard"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Translate text without an internet connection"
+msgstr ""
