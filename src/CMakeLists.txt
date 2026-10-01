@@ -53,8 +53,17 @@ else()
         endif()
     endforeach()
     configure_file(config/main.xml ${package}/contents/config/main.xml COPYONLY)
-    configure_file(metadata.json ${package}/metadata.json COPYONLY)
-    plasma_install_package(${package} ${applet_id})
+    # The package's own metadata names the applet: without KPlugin.Id,
+    # Plasma takes the id from the file name, "metadata", and finds no
+    # package. The plugin's embedded copy must not carry an Id.
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS metadata.json)
+    file(READ metadata.json applet_metadata)
+    string(JSON applet_metadata SET "${applet_metadata}" KPlugin Id "\"${applet_id}\"")
+    file(WRITE ${package}/metadata.json "${applet_metadata}\n")
+    # The macro prefixes its argument with the source directory, so it must
+    # be relative; with an absolute path the AppStream metadata is skipped.
+    file(RELATIVE_PATH package_relative ${CMAKE_CURRENT_SOURCE_DIR} ${package})
+    plasma_install_package(${package_relative} ${applet_id})
 endif()
 target_compile_definitions(${applet_id} PRIVATE TRANSLATION_DOMAIN="${translation_domain}")
 target_link_libraries(${applet_id} PRIVATE
