@@ -9,7 +9,7 @@ import org.kde.plasma.plasmoid
 PlasmoidItem {
     id: root
 
-    readonly property TranslatorBackend backend: Plasmoid.backend
+    readonly property var backend: Plasmoid.backend
 
     // The stored settings; the backend follows them, and they follow the
     // backend when the popup changes the languages or the live switch.

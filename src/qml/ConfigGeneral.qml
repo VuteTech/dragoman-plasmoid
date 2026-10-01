@@ -21,7 +21,7 @@ KCM.SimpleKCM {
     property bool cfg_detectDirection
     property bool cfg_detectDirectionDefault
 
-    readonly property TranslatorBackend backend: Plasmoid.backend
+    readonly property var backend: Plasmoid.backend
     // An empty setting stands for the languages the widget starts with.
     readonly property string source: cfg_sourceLanguage.length > 0 ? cfg_sourceLanguage : backend.sourceLanguage
     readonly property string target: cfg_targetLanguage.length > 0 ? cfg_targetLanguage : backend.targetLanguage

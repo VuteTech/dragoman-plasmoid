@@ -9,7 +9,9 @@ import org.kde.plasma.components as PlasmaComponents3
 PlasmaComponents3.ComboBox {
     id: combo
 
-    required property TranslatorBackend backend
+    // The backend's type is registered only where libplasma builds the
+    // QML module (6.4 and newer), so it is held untyped.
+    required property var backend
     required property string code
     signal chosen(string code)
 

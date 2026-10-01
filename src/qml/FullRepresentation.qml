@@ -12,7 +12,9 @@ import org.kde.plasma.extras as PlasmaExtras
 PlasmaExtras.Representation {
     id: full
 
-    required property TranslatorBackend backend
+    // The backend's type is registered only where libplasma builds the
+    // QML module (6.4 and newer), so it is held untyped.
+    required property var backend
     signal closeRequested()
 
     readonly property bool hasText: backend.sourceText.trim().length > 0
