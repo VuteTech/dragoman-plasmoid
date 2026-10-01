@@ -1,0 +1,35 @@
+Source: dragoman-plasmoid
+Section: kde
+Priority: optional
+Maintainer: Blagovest Petrov <blagovest@petrovs.info>
+Build-Depends: debhelper-compat (= 13),
+ cmake (>= 3.24),
+ ninja-build,
+ extra-cmake-modules (>= 6.13),
+ gettext,
+ qt6-base-dev (>= 6.8),
+ qt6-declarative-dev (>= 6.8),
+ libkf6config-dev (>= 6.13),
+ libkf6coreaddons-dev (>= 6.13),
+ libkf6i18n-dev (>= 6.13),
+ libplasma-dev (>= 6.3),
+ libdragoman-qt-dev,
+ dbus-daemon
+Standards-Version: 4.7.0
+Homepage: https://dragomand.l10n-bg.dev
+Vcs-Browser: https://github.com/VuteTech/dragoman-plasmoid
+Vcs-Git: https://github.com/VuteTech/dragoman-plasmoid.git
+Rules-Requires-Root: no
+
+Package: dragoman-plasmoid
+Architecture: amd64 arm64
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ qml6-module-org-kde-kcmutils,
+ qml6-module-org-kde-kirigami,
+ dragomand
+Enhances: plasma-workspace
+Description: Plasma widget for offline translation through Dragomand
+ An Offline Translator widget for the Plasma 6 panel and desktop. It
+ translates text fully offline through the Dragomand daemon and Mozilla's
+ Firefox translation models; a language pair that is not installed yet is
+ downloaded on first use.
