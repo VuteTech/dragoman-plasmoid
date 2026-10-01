@@ -116,8 +116,8 @@ PlasmaExtras.Representation {
             visible: full.backend.missingPair
             text: i18nc("@info %1 and %2 are language names",
                         "Translating from %1 into %2 needs language models that are not installed yet.",
-                        full.backend.languageName(full.backend.sourceLanguage),
-                        full.backend.languageName(full.backend.targetLanguage))
+                        full.backend.languageNameInSentence(full.backend.sourceLanguage),
+                        full.backend.languageNameInSentence(full.backend.targetLanguage))
             actions: Kirigami.Action {
                 text: i18nc("@action:button", "Install")
                 icon.name: "download"
@@ -225,7 +225,7 @@ PlasmaExtras.Representation {
             Layout.fillWidth: true
             visible: full.backend.pivot.length > 0
             text: i18nc("@info %1 is a language name", "Translated through %1: no direct model exists for this pair.",
-                        full.backend.languageName(full.backend.pivot))
+                        full.backend.languageNameInSentence(full.backend.pivot))
             wrapMode: Text.Wrap
             font: Kirigami.Theme.smallFont
             opacity: 0.7

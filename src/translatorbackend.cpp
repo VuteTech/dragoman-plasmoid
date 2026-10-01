@@ -255,6 +255,11 @@ QString TranslatorBackend::languageName(const QString &code) const
     return Dragoman::languageName(code);
 }
 
+QString TranslatorBackend::languageNameInSentence(const QString &code) const
+{
+    return Dragoman::languageNameInSentence(code);
+}
+
 QList<qsizetype> TranslatorBackend::segmentLines(const QStringList &lines)
 {
     QList<qsizetype> result;
@@ -319,7 +324,8 @@ void TranslatorBackend::start(bool install)
             // missing daemon is reported by the translation.
             if (error.isEmpty() && detection.reliable && detection.language == m_target) {
                 std::swap(m_source, m_target);
-                m_directionNotice = i18nc("@info %1 is a language name", "The text is in %1, so the languages were swapped.", Dragoman::languageName(m_source));
+                m_directionNotice =
+                    i18nc("@info %1 is a language name", "The text is in %1, so the languages were swapped.", Dragoman::languageNameInSentence(m_source));
                 Q_EMIT languagesChanged();
             }
             nextBatch();

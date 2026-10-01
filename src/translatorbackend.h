@@ -168,6 +168,8 @@ public:
     Q_INVOKABLE void openInKrakoman() const;
     /// The name of a language in the user's language.
     Q_INVOKABLE QString languageName(const QString &code) const;
+    /// languageName() for the middle of a sentence ("от английски").
+    Q_INVOKABLE QString languageNameInSentence(const QString &code) const;
 
     /// Splits @p lines into the ones to translate: every line with a letter
     /// or digit in it. Public for the tests.
