@@ -33,6 +33,11 @@ if(COMMAND plasma_add_applet)
             translatorapplet.cpp
             translatorapplet.h
             ${backend_sources})
+    # Bytecode only: qmlcachegen's C++ code generation links Qt's private
+    # API, versioned per Qt minor release, so a package built with Qt 6.10
+    # would refuse to install next to 6.11. Bytecode from another Qt
+    # version is simply recompiled at startup.
+    set_target_properties(${applet_id} PROPERTIES QT_QMLCACHEGEN_ARGUMENTS "--only-bytecode")
 else()
     # Older libplasma (Debian 13 has 6.3): a plain plugin, plus the QML
     # installed as a classic package (contents/ui, contents/config).
