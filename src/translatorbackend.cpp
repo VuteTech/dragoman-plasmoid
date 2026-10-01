@@ -312,24 +312,24 @@ void TranslatorBackend::start(bool install)
     }
     m_detecting = true;
     Q_EMIT stateChanged();
-    m_client.detectLanguage(
-        m_sourceText.left(detectionChars),
-        {m_source, m_target},
-        [this, generation = m_generation](const Dragoman::Detection &detection, const QString &error) {
-            if (generation != m_generation) {
-                return; // superseded or cancelled
-            }
-            m_detecting = false;
-            // Without detection, translate as chosen; a
-            // missing daemon is reported by the translation.
-            if (error.isEmpty() && detection.reliable && detection.language == m_target) {
-                std::swap(m_source, m_target);
-                m_directionNotice =
-                    i18nc("@info %1 is a language name", "The text is in %1, so the languages were swapped.", Dragoman::languageNameInSentence(m_source));
-                Q_EMIT languagesChanged();
-            }
-            nextBatch();
-        });
+    m_client.detectLanguage(m_sourceText.left(detectionChars),
+                            {m_source, m_target},
+                            [this, generation = m_generation](const Dragoman::Detection &detection, const QString &error) {
+                                if (generation != m_generation) {
+                                    return; // superseded or cancelled
+                                }
+                                m_detecting = false;
+                                // Without detection, translate as chosen; a
+                                // missing daemon is reported by the translation.
+                                if (error.isEmpty() && detection.reliable && detection.language == m_target) {
+                                    std::swap(m_source, m_target);
+                                    m_directionNotice = i18nc("@info %1 is a language name",
+                                                              "The text is in %1, so the languages were swapped.",
+                                                              Dragoman::languageNameInSentence(m_source));
+                                    Q_EMIT languagesChanged();
+                                }
+                                nextBatch();
+                            });
 }
 
 void TranslatorBackend::nextBatch()
